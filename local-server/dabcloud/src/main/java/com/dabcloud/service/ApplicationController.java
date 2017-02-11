@@ -19,10 +19,6 @@ public class ApplicationController {
 
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
 	
-	@RequestMapping(method = RequestMethod.GET, value = "/")
-	public @ResponseBody String root() {
-		return "Hello world! This is DABCloud";
-	}
     @RequestMapping(method = RequestMethod.GET, value = "/healthy")
     public @ResponseBody String healthCheck () {
     	log.info("Incoming request");
